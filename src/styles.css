@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+h1 {
+  color: blueviolet;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-size: 16px; */
+}
+
+@import "../node_modules/ng2-slim-loading-bar/style.css";
+@import url('https://unpkg.com/bootstrap@3.3/dist/css/bootstrap.min.css');
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";

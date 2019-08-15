@@ -1,0 +1,33 @@
+<h2>My favorite movies</h2>
+<div style="text-align: left">
+    <table style="width: 300px">
+        <tr>
+            <td>New movie's name:</td>
+            <td>
+                <input #movieName placeholder="name">
+            </td>
+        </tr>
+        <tr>
+            <td>Release year:</td>
+            <td>
+                <input #releaseYear placeholder="release year">
+            </td>
+        </tr>
+        <tr>
+            <button (click)="add(movieName.value, releaseYear.value)">
+                add
+            </button>
+            <mat-checkbox>Check me!</mat-checkbox>
+        </tr>
+    </table>
+</div>
+<div class="parent">
+    <ol class="movies">
+        <li class="movieListItem" @fade *ngFor="let eachMovie of movies">
+            <a routerLink="/detail/{{eachMovie.id}}" style="text-decoration: none;">
+                {{eachMovie.name}} - {{eachMovie.releaseYear}}
+            </a>
+            <button title="delete movie" (click)="delete(eachMovie.id)" style="float: right">x</button>
+        </li>
+    </ol>
+</div>
