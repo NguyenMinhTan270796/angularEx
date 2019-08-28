@@ -1,4 +1,4 @@
-import { Component, OnInit, transition } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MessagesService } from '../messages.service';
 
 @Component({

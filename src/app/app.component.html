@@ -1,13 +1,12 @@
-<ng2-slim-loading-bar color="blue"></ng2-slim-loading-bar>
 <div>
   <h1 style="text-align: center"> 
     {{title}}!
   </h1>
   <nav style="text-align: center">
-    <a [routerLink]="['/movies']">Movies</a>
-    <a [routerLink]="['/dashboard']">Dashboard</a>
-    <a [routerLink]="['/employee']">Employee</a>
-    <a [routerLink]="['/material']" >Material</a>
+    <a routerLink='/movies'>Movies</a>
+    <a routerLink='/dashboard'>Dashboard</a>
+    <a routerLink='/employee'>Employee</a>
+    <a routerLink='/material'>Material</a>
   </nav>
   <router-outlet></router-outlet>
 </div>

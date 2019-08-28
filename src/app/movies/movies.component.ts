@@ -69,7 +69,7 @@ export class MoviesComponent implements OnInit {
   }
 
   delete(movieId: number): void {
-    this.moviesService.deleteMovie(movieId).subscribe(() => {
+    this.moviesService.deleteMovie(movieId).subscribe(_ => {
       this.movies = this.movies.filter(eachMovie => eachMovie.id !== movieId);
     });
   }

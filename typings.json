@@ -1,5 +1,6 @@
 {
   "globalDependencies": {
+    "bootstrap": "registry:dt/bootstrap#3.3.5+20160726204056",
     "hammerjs": "registry:dt/hammerjs#2.0.8+20161224203613",
     "mongoose": "registry:dt/mongoose#4.7.0+20170322192047"
   }

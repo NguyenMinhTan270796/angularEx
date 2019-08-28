@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { async, reject } from 'q';
-import { resolve } from 'url';
 import {SlimLoadingBarService} from 'ng2-slim-loading-bar';
 import { NavigationCancel,
         Event,

@@ -22,4 +22,10 @@ describe('LoginComponent', () => {
   it('should be created', () => {
     expect(component).toBeTruthy();
   });
+
+  it('login with api', () => {
+    expect(component.loginfunc('opcotv@forma-veo.com', 'opcotv')).toEqual('/dashboard');
+  });
+
 });
+

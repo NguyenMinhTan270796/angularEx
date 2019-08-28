@@ -54,4 +54,12 @@ export class LoginComponent implements OnInit {
     }
   }
 
+  add (a: number, b: number) {
+    return a + b;
+  }
+
+  minus (a: number, b: number) {
+    return a - b;
+  }
+
 }

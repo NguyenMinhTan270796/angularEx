@@ -7,7 +7,7 @@ import { Movie } from '../models/movie';
 import { MoviesDetailComponent } from './movies-detail/movies-detail.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { LoginComponent } from './login/login.component';
-
+import { MaterialComponent } from './material/material.component';
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   // { path: '*', component: LoginComponent},
@@ -16,6 +16,7 @@ const routes: Routes = [
   { path: 'detail/:id', component: MoviesDetailComponent },
   { path: 'employee', component: EmployeeComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'material', component: MaterialComponent },
 ];
 
 @NgModule({
